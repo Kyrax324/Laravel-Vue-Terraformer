@@ -1,0 +1,101 @@
+$primary : #57BD7A;
+
+// default color for vuetify
+$error : #ff5252;
+$info : #2196f3;
+$warning : #fb8c00;
+$success : #4caf50;
+$grey : #9e9e9e;
+$black : #666;
+
+.radius-05{
+	border-radius: 5px !important;
+}
+.radius-10{
+	border-radius: 10px !important;
+}
+.radius-20{
+	border-radius: 20px !important;
+}
+.radius-30{
+	border-radius: 30px !important;
+}
+.radius-40{
+	border-radius: 40px !important;
+}
+.radius-50{
+	border-radius: 50px !important;
+}
+
+.radius-tl-20{
+	border-top-left-radius: 20px !important;
+}
+.radius-tr-20{
+	border-top-right-radius: 20px !important;
+}
+.radius-bl-20{
+	border-bottom-left-radius: 20px !important;
+}
+.radius-br-20{
+	border-bottom-right-radius: 20px !important;
+}
+
+.word-wrap{
+	white-space: normal;
+}
+.no-word-wrap{
+	overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.display-paragraph{
+    white-space: pre-line !important;
+}
+
+.border-left-primary{
+	border-left: 8px solid $primary !important;
+}
+.border-left-error{
+	border-left: 8px solid $error !important;
+}
+.border-left-warning{
+	border-left: 8px solid $warning !important;
+}
+.border-left-info{
+	border-left: 8px solid $info !important;
+}
+.border-left-grey{
+	border-left: 8px solid $grey !important;
+}
+.border-left-black{
+	border-left: 8px solid $black !important;
+}
+
+.fill-width{
+	width: 100% !important;
+}
+
+.absolute{
+	position: absolute;
+}
+.relative{
+	position: relative;
+}
+// speical shape
+.rounded-banner {
+    position: fixed;
+    width: 100%;
+    border-bottom-right-radius: 50% 35px;
+    border-bottom-left-radius: 50% 35px;
+}
+
+.btn-active{
+    border-bottom-right-radius: unset;
+    border-bottom-left-radius: unset;
+	border-bottom: 3px solid $primary;
+}
+
+.clickable{
+    cursor: pointer;
+}
