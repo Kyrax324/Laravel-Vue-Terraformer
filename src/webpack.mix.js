@@ -1,4 +1,5 @@
 const mix = require('laravel-mix');
+require('laravel-mix-bundle-analyzer');
 
 mix.webpackConfig({
 	resolve: {
@@ -23,9 +24,14 @@ mix.webpackConfig({
 mix.js('resources/js/app.js', 'public/js')
     .sass('resources/sass/app.scss', 'public/css');
 
-let run_version = false
-if (run_version) {
+if (!process.argv.includes('--hot')) {
     mix.version();
+}
+
+if (!mix.inProduction()) {
+    mix.bundleAnalyzer({
+	    openAnalyzer: false,
+	});
 }
 
 // mix.options({

@@ -70,6 +70,7 @@ npm_install(){
 	npm install vue-router@3
 	npm i vue-axios@2
 	npm i @websanova/vue-auth@3
+	npm install laravel-mix-bundle-analyzer@1 --save-dev
 }
 
 composer_install(){
